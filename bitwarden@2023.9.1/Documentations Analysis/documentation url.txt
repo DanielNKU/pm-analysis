@@ -1,6 +1,15 @@
-https://bitwarden.com/help/bitwarden-security-white-paper/
-https://bitwarden.com/help/vault-data/
-https://bitwarden.com/help/what-encryption-is-used/
-https://bitwarden.com/help/kdf-algorithms/
-https://bitwarden.com/help/data-storage/
-https://bitwarden.com/crypto.html
+Official website:
+	https://bitwarden.com/help/bitwarden-security-white-paper/
+	https://bitwarden.com/help/vault-data/
+	https://bitwarden.com/help/what-encryption-is-used/
+	https://bitwarden.com/help/kdf-algorithms/
+	https://bitwarden.com/help/data-storage/
+	https://bitwarden.com/crypto.html
+
+Expert Blog:
+	https://portswigger.net/daily-swig/bitwarden-responds-to-encryption-design-flaw-criticism
+	https://www.reddit.com/r/Bitwarden/comments/m6jnu1/how_does_bitwarden_works/?rdt=42053
+	https://www.androidauthority.com/is-bitwarden-safe-3330330/
+	https://palant.info/2023/01/23/bitwarden-design-flaw-server-side-iterations/
+	https://www.quora.com/How-secure-is-BitWardens-end-to-end-encryption
+	
