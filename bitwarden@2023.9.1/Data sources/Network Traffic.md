@@ -190,14 +190,3 @@ Referer: https://vault.bitwarden.com/
 Accept-Encoding: gzip, deflate, br
 Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
 ```
-
-## 2. Searching Local Data File
-
-Windows:
-
-~\AppData\Roaming\Bitwarden\data,json
-
-Finding:
-
-1. Bitwarden do not use the same format for every items. For example, if an item do not have URL fields, and another iterm have URL fields, then the item with URL will have an URL record in JSON file while the item without URL will not. It can be distinguished whether the item have URL fields.
-2. The creation time, delete date, revision date can be viewed.
