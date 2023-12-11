@@ -1,6 +1,6 @@
 ## Dynamic Analysis
 
-![dynamic analysis1](../Documentations sources/fig/dynamic analysis1.png)
+![dynamic analysis1](fig/dynamic analysis1.png)
 
 ```javascript
 k = function(e, t, n, r, i) {
@@ -38,7 +38,7 @@ k = function(e, t, n, r, i) {
         }
 ```
 
-![dynamic analysis2](../Documentations sources/fig/dynamic analysis2.png)
+![dynamic analysis2](fig/dynamic analysis2.png)
 
 ```javascript
 return e = {
