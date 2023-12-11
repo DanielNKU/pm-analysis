@@ -18,7 +18,7 @@
 
 [Vault Data | Bitwarden Help Center](https://bitwarden.com/help/vault-data/)
 
-![data field](fig/data field.png)
+![data field](fig/data-field.png)
 
 ## Storage Protocol
 
