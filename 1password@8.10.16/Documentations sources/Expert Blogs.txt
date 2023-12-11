@@ -1,0 +1,7 @@
+Expert Blogs:
+	https://security.stackexchange.com/questions/257617/what-algorithm-does-1password-use-for-encryption-aes-gcm-256-or-aes-cbc-256
+	https://1password.community/discussion/53566/how-is-1passwords-encryption-different-from-lastpasss
+	https://www.quora.com/How-does-1password-work-and-do-they-really-not-save-passwords
+	https://www.reddit.com/r/1Password/comments/106xav6/1password_vault_key_and_public_key_encryption/
+	https://cybernews.com/best-password-managers/1password-review/
+	https://medium.com/geekculture/how-password-manager-services-like-1password-and-lastpass-work-293699a65f2b

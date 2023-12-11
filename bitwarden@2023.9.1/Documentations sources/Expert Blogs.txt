@@ -1,4 +1,4 @@
-Expert Blog:
+Expert Blogs:
 	https://portswigger.net/daily-swig/bitwarden-responds-to-encryption-design-flaw-criticism
 	https://www.reddit.com/r/Bitwarden/comments/m6jnu1/how_does_bitwarden_works/?rdt=42053
 	https://www.androidauthority.com/is-bitwarden-safe-3330330/

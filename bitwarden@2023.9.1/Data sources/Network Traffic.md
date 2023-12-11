@@ -190,3 +190,8 @@ Referer: https://vault.bitwarden.com/
 Accept-Encoding: gzip, deflate, br
 Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6
 ```
+
+Finding:
+
+1. The username is not anoymous.
+2. Bitwarden send key and private key, we do not know this whether this key is encrypted.

@@ -20,7 +20,7 @@
 
 ![data field](fig/data field.png)
 
-## Storage Scheme
+## Storage Protocol
 
 [Bitwarden Security Whitepaper | Bitwarden Help Center](https://bitwarden.com/help/bitwarden-security-white-paper/)
 

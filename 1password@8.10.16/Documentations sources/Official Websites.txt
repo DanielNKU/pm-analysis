@@ -1,0 +1,8 @@
+Official websites:
+	https://1password.com/security/
+	https://support.1password.com/strong-account-password/
+	https://support.1password.com/secret-key-security/
+	https://support.1password.com/secure-remote-password/
+	https://support.1password.com/1password-security/
+	https://support.1password.com/pbkdf2/
+	https://support.1password.com/1password-privacy/
