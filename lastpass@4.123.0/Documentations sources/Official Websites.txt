@@ -1,0 +1,4 @@
+Official websites:
+	https://www.lastpass.com/features/password-vault
+	https://www.lastpass.com/security
+	https://www.lastpass.com/security/zero-knowledge-security

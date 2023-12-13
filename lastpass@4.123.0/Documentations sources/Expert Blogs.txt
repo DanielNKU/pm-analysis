@@ -1,0 +1,6 @@
+Expert Blogs:
+	https://blog.lastpass.com/2023/06/how-to-make-your-lastpass-vault-as-secure-as-possible/
+	https://nordvpn.com/blog/is-lastpass-secure/
+	https://arstechnica.com/information-technology/2022/12/lastpass-says-hackers-have-obtained-vault-data-and-a-wealth-of-customer-info/
+	https://www.theverge.com/2022/12/28/23529547/lastpass-vault-breach-disclosure-encryption-cybersecurity-rebuttal
+	https://cybernews.com/best-password-managers/lastpass-review/
