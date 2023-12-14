@@ -1,0 +1,6 @@
+Official Websites：
+	https://docs.keeper.io/enterprise-guide/keeper-encryption-model
+	https://www.keepersecurity.com/privacypolicy.html
+	https://www.keepersecurity.com/security.html
+	https://www.keepersecurity.com/blog/2023/02/16/what-is-encryption-how-it-works-and-its-benefits/
+	https://docs.keeper.io/secrets-manager/secrets-manager/about/security-encryption-model
