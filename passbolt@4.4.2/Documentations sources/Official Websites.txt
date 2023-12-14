@@ -1,0 +1,10 @@
+Official websites:
+	https://help.passbolt.com/hosting/install/ce/from-source.html?pk_vid=32fd8638c2dc70b117024732063e4a91
+	https://www.passbolt.com/security
+	https://help.passbolt.com/faq/security/
+	https://help.passbolt.com/faq/security/what-is-encrypted
+	https://help.passbolt.com/faq/security/encryption-tech
+	https://help.passbolt.com/faq/security/authentication
+	https://help.passbolt.com/tech/auth
+	https://github.com/passbolt/passbolt_help/blob/master/docs/faq/security/encryption-tech.html
+	https://www.fortinet.com/resources/cyberglossary/pgp-encryption
