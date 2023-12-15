@@ -1,0 +1,5 @@
+Official Websites:
+	https://keepass.info/help/base/security.html
+	https://keepass.info/features.html
+	https://keepass.info/help/base/faq_tech.html
+	https://keepass.info/help/v2/dbsettings.html
