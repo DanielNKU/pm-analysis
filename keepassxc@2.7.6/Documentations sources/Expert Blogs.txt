@@ -1,0 +1,3 @@
+Expert Blogs:
+	https://security.stackexchange.com/questions/200000/what-are-keepassxc-encryption-settings
+	https://man.archlinux.org/man/keepassxc.1.en

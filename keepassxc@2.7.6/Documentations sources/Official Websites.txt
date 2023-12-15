@@ -1,0 +1,5 @@
+Official websites:
+	https://keepassxc.org/
+	https://keepassxc.org/docs/KeePassXC_UserGuide#_database_settings
+	https://keepassxc.org/docs/
+
