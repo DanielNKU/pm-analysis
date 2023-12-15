@@ -1,0 +1,5 @@
+Official Websites:
+	https://nordpass.com/features/xchacha20-encryption/
+	https://nordpass.com/features/zero-knowledge-architecture/
+	https://nordpass.com/features/backup-sync/
+	https://support.nordpass.com/hc/en-us/articles/360002378238-What-encryption-algorithm-does-NordPass-use-
