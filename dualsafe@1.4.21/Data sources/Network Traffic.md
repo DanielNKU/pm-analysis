@@ -121,7 +121,7 @@ Vary: Accept-Encoding
 
 we also find that all the encrypted data was encrypted by an hard-encode key
 
-```
+```javascript
 async PostJson(url, obj, ext_headers) {
                 var key = CryptoJS.enc.Utf8.parse("7F37B64034E84931BDD06DC9B6A7DB72");
                 let body = JSON.stringify(obj);
