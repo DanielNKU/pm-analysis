@@ -1,0 +1,5 @@
+Official Websites:
+	https://www.dropbox.com/features/security/passwords
+	https://www.dropbox.com/features/security/
+	https://help.dropbox.com/security/how-security-works
+	https://dropbox.tech/application/dropbox-passwords-clock-skew-payload-sync-merge
