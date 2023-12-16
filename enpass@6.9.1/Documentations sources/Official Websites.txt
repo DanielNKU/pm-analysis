@@ -1,0 +1,4 @@
+Official Websites:
+	https://www.enpass.io/security/
+	https://support.enpass.io/docs/security-whitepaper-enpass/index.html
+	https://support.enpass.io/docs/security-whitepaper-enpass/vault.html
