@@ -24,3 +24,26 @@ function KeyForPassword(password, salt) {
   return helpers_1.wordsArrayToUint8Array(key);
 }
 ```
+
+Symmetric Encryption
+
+![](D:\坚果云同步\我的坚果云\我的工作\口令管理器存储方案研究\pm-analysis\pm-analysis\avira@2.19.13.44521\Application sources\fig\AES.png)
+
+ Hash Function
+
+![](D:\坚果云同步\我的坚果云\我的工作\口令管理器存储方案研究\pm-analysis\pm-analysis\avira@2.19.13.44521\Application sources\fig\Hash.png)
+
+ Key Derivation Function
+
+![](D:\坚果云同步\我的坚果云\我的工作\口令管理器存储方案研究\pm-analysis\pm-analysis\avira@2.19.13.44521\Application sources\fig\AES-key.png)
+
+![](D:\坚果云同步\我的坚果云\我的工作\口令管理器存储方案研究\pm-analysis\pm-analysis\avira@2.19.13.44521\Application sources\fig\AES-IV.png)
+
+![](D:\坚果云同步\我的坚果云\我的工作\口令管理器存储方案研究\pm-analysis\pm-analysis\avira@2.19.13.44521\Application sources\fig\AES-key-given.png)
+
+Random number gernator
+
+![](D:\坚果云同步\我的坚果云\我的工作\口令管理器存储方案研究\pm-analysis\pm-analysis\avira@2.19.13.44521\Application sources\fig\random.png)
+
+
+

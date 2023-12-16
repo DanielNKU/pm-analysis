@@ -363,25 +363,3 @@ export const checkMasterPassword = (
 );
 ```
 
-Symmetric Encryption
-
-![](fig/AES.png)
-
- Hash Function
-
-![](fig/Hash.png)
-
- Key Derivation Function
-
-![](fig/AES-key.png)
-
-![](fig/AES-IV.png)
-
-![](fig/AES-key-given.png)
-
-Random number gernator
-
-![](fig/random.png)
-
-
-
