@@ -1,0 +1,5 @@
+Expert Blogs:
+	https://security.stackexchange.com/questions/11192/how-secure-are-the-password-files-used-by-password-safe-and-password-gorilla
+	https://www.schneier.com/academic/passsafe/
+	https://en.wikipedia.org/wiki/Password_Safe
+	https://appdb.winehq.org/appview.php?iAppId=4017
