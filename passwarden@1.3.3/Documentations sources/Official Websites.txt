@@ -1,0 +1,6 @@
+Official Websites:
+	https://www.passwarden.com/
+	https://www.passwarden.com/security/data-encryption
+	https://www.passwarden.com/security/zero-knowledge-password-manager
+	https://www.passwarden.com/features/keepsolid-id-and-master-password
+	https://www.passwarden.com/features/data-encryption
