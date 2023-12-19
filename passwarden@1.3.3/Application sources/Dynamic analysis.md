@@ -45,359 +45,359 @@ e.setKeychain = function(t, a) {
 
 ```javascript
 static async generateHashFromMasterPassword(t, e) {
-                                const n = Object(r.prepareArgonSalt)(e)
-                                  , i = await Object(r.generateHash)(t, n);
-                                return {
-                                    salt: i.salt,
-                                    hash: i.hash
-                                }
-                            }
+    const n = Object(r.prepareArgonSalt)(e)
+      , i = await Object(r.generateHash)(t, n);
+    return {
+        salt: i.salt,
+        hash: i.hash
+    }
+}
 ```
 
 ```javascript
 async function E(t, e) {
-                            const n = (await r.default.hash({
-                                pass: t,
-                                salt: e,
-                                time: 4,
-                                mem: 16384,
-                                hashLen: 32,
-                                parallelism: 1,
-                                type: r.default.ArgonType.Argon2id
-                            }).catch(t=>console.log(t))).encoded.split("$")
-                              , i = n.length;
-                            return {
-                                hash: n[i - 1],
-                                salt: n.slice(0, [i - 1]).join("$")
-                            }
-                        }
+    const n = (await r.default.hash({
+        pass: t,
+        salt: e,
+        time: 4,
+        mem: 16384,
+        hashLen: 32,
+        parallelism: 1,
+        type: r.default.ArgonType.Argon2id
+    }).catch(t=>console.log(t))).encoded.split("$")
+      , i = n.length;
+    return {
+        hash: n[i - 1],
+        salt: n.slice(0, [i - 1]).join("$")
+    }
+}
 ```
 
 ```javascript
 async init(t) {
-                                const {encHash: e, signHash: n} = await Object(i.generatePasswordKeys)(t);
-                                this.encPasswordKey = await Object(r.importPassword)(e),
-                                this.signPasswordKey = await Object(r.importPassword)(n),
-                                this.recovery_key = t
-                            }
+    const {encHash: e, signHash: n} = await Object(i.generatePasswordKeys)(t);
+    this.encPasswordKey = await Object(r.importPassword)(e),
+    this.signPasswordKey = await Object(r.importPassword)(n),
+    this.recovery_key = t
+}
 ```
 
 ```javascript
 async setKeyChain(t) {
-                                var e, n;
-                                const r = await Object(i.setEncryptKeyPair)(this.encPasswordKey, {
-                                    ...t.enc_keypair
-                                });
-                                if (this.pemChain = {
-                                    enc_keypair: t.enc_keypair
-                                },
-                                this.keyChain = {
-                                    enc_keypair: r
-                                },
-                                (null === (e = null == t ? void 0 : t.sign_keypair) || void 0 === e ? void 0 : e.private_key) && (null === (n = null == t ? void 0 : t.sign_keypair) || void 0 === n ? void 0 : n.public_key)) {
-                                    const e = await Object(i.setSignKeyPair)(this.signPasswordKey, {
-                                        ...t.sign_keypair
-                                    });
-                                    this.pemChain = {
-                                        ...this.pemChain,
-                                        sign_keypair: t.sign_keypair
-                                    },
-                                    this.keyChain = {
-                                        ...this.keyChain,
-                                        sign_keypair: e
-                                    }
-                                }
-                            }
+    var e, n;
+    const r = await Object(i.setEncryptKeyPair)(this.encPasswordKey, {
+        ...t.enc_keypair
+    });
+    if (this.pemChain = {
+        enc_keypair: t.enc_keypair
+    },
+    this.keyChain = {
+        enc_keypair: r
+    },
+    (null === (e = null == t ? void 0 : t.sign_keypair) || void 0 === e ? void 0 : e.private_key) && (null === (n = null == t ? void 0 : t.sign_keypair) || void 0 === n ? void 0 : n.public_key)) {
+        const e = await Object(i.setSignKeyPair)(this.signPasswordKey, {
+            ...t.sign_keypair
+        });
+        this.pemChain = {
+            ...this.pemChain,
+            sign_keypair: t.sign_keypair
+        },
+        this.keyChain = {
+            ...this.keyChain,
+            sign_keypair: e
+        }
+    }
+}
 ```
 
 and find the core function of unlocking the vault
 
 ```javascript
 e.LoginWithMasterPassword = function(t) {
-                var a, s, r = t.password, n = t.isContentScript, i = void 0 !== n && n;
-                return Object(p["b"])(this, void 0, void 0, (function() {
-                    var t, n, o, c;
-                    return Object(p["e"])(this, (function(_) {
-                        switch (_.label) {
-                        case 0:
-                            return _.trys.push([0, 10, , 12]),
-                            r ? [4, eO["a"].getAccountStatus({
-                                showKeys: 1
-                            })] : [3, 9];
-                        case 1:
-                            return t = _.sent(),
-                            n = null !== (s = null === (a = null === t || void 0 === t ? void 0 : t.data) || void 0 === a ? void 0 : a.key_pairs) && void 0 !== s ? s : [],
-                            [4, ZI.fetchSchema()];
-                        case 2:
-                            return o = _.sent(),
-                            o ? [3, 4] : [4, rO["a"].errorPush({
-                                errors: [{
-                                    code: 1018
-                                }]
-                            })];
-                        case 3:
-                            return _.sent(),
-                            [2];
-                        case 4:
-                            return [4, eO["a"].fetchKeychainList({
-                                masterPassword: r,
-                                keypairList: n
-                            })];
-                        case 5:
-                            return _.sent(),
-                            (null === t || void 0 === t ? void 0 : t.success) && n.length ? [4, e.loginWithMaster(r, i)] : [3, 7];
-                        case 6:
-                            return [2, _.sent()];
-                        case 7:
-                            return [4, rO["a"].errorPush({
-                                errors: [{
-                                    code: 1018
-                                }]
-                            })];
-                        case 8:
-                            return _.sent(),
-                            [2];
-                        case 9:
-                            return [3, 12];
-                        case 10:
-                            return c = _.sent(),
-                            console.log(c),
-                            [4, rO["a"].errorPush({
-                                errors: [{
-                                    code: 1018
-                                }]
-                            })];
-                        case 11:
-                            return _.sent(),
-                            [3, 12];
-                        case 12:
-                            return [2]
-                        }
-                    }
-                    ))
-                }
-                ))
+    var a, s, r = t.password, n = t.isContentScript, i = void 0 !== n && n;
+    return Object(p["b"])(this, void 0, void 0, (function() {
+        var t, n, o, c;
+        return Object(p["e"])(this, (function(_) {
+            switch (_.label) {
+            case 0:
+                return _.trys.push([0, 10, , 12]),
+                r ? [4, eO["a"].getAccountStatus({
+                    showKeys: 1
+                })] : [3, 9];
+            case 1:
+                return t = _.sent(),
+                n = null !== (s = null === (a = null === t || void 0 === t ? void 0 : t.data) || void 0 === a ? void 0 : a.key_pairs) && void 0 !== s ? s : [],
+                [4, ZI.fetchSchema()];
+            case 2:
+                return o = _.sent(),
+                o ? [3, 4] : [4, rO["a"].errorPush({
+                    errors: [{
+                        code: 1018
+                    }]
+                })];
+            case 3:
+                return _.sent(),
+                [2];
+            case 4:
+                return [4, eO["a"].fetchKeychainList({
+                    masterPassword: r,
+                    keypairList: n
+                })];
+            case 5:
+                return _.sent(),
+                (null === t || void 0 === t ? void 0 : t.success) && n.length ? [4, e.loginWithMaster(r, i)] : [3, 7];
+            case 6:
+                return [2, _.sent()];
+            case 7:
+                return [4, rO["a"].errorPush({
+                    errors: [{
+                        code: 1018
+                    }]
+                })];
+            case 8:
+                return _.sent(),
+                [2];
+            case 9:
+                return [3, 12];
+            case 10:
+                return c = _.sent(),
+                console.log(c),
+                [4, rO["a"].errorPush({
+                    errors: [{
+                        code: 1018
+                    }]
+                })];
+            case 11:
+                return _.sent(),
+                [3, 12];
+            case 12:
+                return [2]
             }
+        }
+        ))
+    }
+    ))
+}
 ```
 
 and
 
 ```javascript
 e.loginWithMaster = function(t, a) {
-                return Object(p["b"])(this, void 0, void 0, (function() {
-                    var s, r, n, i;
-                    return Object(p["e"])(this, (function(o) {
-                        switch (o.label) {
-                        case 0:
-                            return [4, tO["a"].getEnterMasterErrors()];
-                        case 1:
-                            return s = o.sent(),
-                            s < 5 ? [4, oO["a"].checkMasterPassword({
-                                masterPassword: t
-                            })] : [3, 13];
-                        case 2:
-                            return r = o.sent(),
-                            r ? [4, e.store.dispatch("keychain/setCurrentKeychain", r.keychain_uuid)] : [3, 10];
-                        case 3:
-                            return o.sent(),
-                            [4, tO["a"].removeEnterMasterErrors()];
-                        case 4:
-                            return o.sent(),
-                            [4, this.getVaults(r)];
-                        case 5:
-                            return n = o.sent(),
-                            n ? [4, eO["a"].getAllNotifications()] : [3, 9];
-                        case 6:
-                            return o.sent(),
-                            iO["a"].open(),
-                            [4, nO["a"].open({
-                                token: null
-                            })];
-                        case 7:
-                            return o.sent(),
-                            e.bs.changeBrowserIcon(!0),
-                            [4, e.bs.unlock(a)];
-                        case 8:
-                            return o.sent(),
-                            [2, !0];
-                        case 9:
-                            return [2, !1];
-                        case 10:
-                            return [4, rO["a"].errorPush({
-                                errors: [{
-                                    message: "WRONG_MASTER_ERROR"
-                                }]
-                            })];
-                        case 11:
-                            return o.sent(),
-                            [4, tO["a"].increaseEnterMasterErrors()];
-                        case 12:
-                            if (o.sent(),
-                            a)
-                                return [2, {
-                                    error: "WRONG_MASTER_ERROR"
-                                }];
-                            o.label = 13;
-                        case 13:
-                            return [4, tO["a"].getEnterMasterErrors()];
-                        case 14:
-                            return i = o.sent(),
-                            i > 4 ? [4, rO["a"].errorPush({
-                                errors: [{
-                                    message: "MASTER_REACHED_LIMIT_ATTEMPS_ERROR"
-                                }]
-                            })] : [3, 18];
-                        case 15:
-                            return o.sent(),
-                            [4, tO["a"].removeEnterMasterErrors()];
-                        case 16:
-                            return o.sent(),
-                            [4, this.logout()];
-                        case 17:
-                            o.sent(),
-                            o.label = 18;
-                        case 18:
-                            return [2]
-                        }
-                    }
-                    ))
-                }
-                ))
+    return Object(p["b"])(this, void 0, void 0, (function() {
+        var s, r, n, i;
+        return Object(p["e"])(this, (function(o) {
+            switch (o.label) {
+            case 0:
+                return [4, tO["a"].getEnterMasterErrors()];
+            case 1:
+                return s = o.sent(),
+                s < 5 ? [4, oO["a"].checkMasterPassword({
+                    masterPassword: t
+                })] : [3, 13];
+            case 2:
+                return r = o.sent(),
+                r ? [4, e.store.dispatch("keychain/setCurrentKeychain", r.keychain_uuid)] : [3, 10];
+            case 3:
+                return o.sent(),
+                [4, tO["a"].removeEnterMasterErrors()];
+            case 4:
+                return o.sent(),
+                [4, this.getVaults(r)];
+            case 5:
+                return n = o.sent(),
+                n ? [4, eO["a"].getAllNotifications()] : [3, 9];
+            case 6:
+                return o.sent(),
+                iO["a"].open(),
+                [4, nO["a"].open({
+                    token: null
+                })];
+            case 7:
+                return o.sent(),
+                e.bs.changeBrowserIcon(!0),
+                [4, e.bs.unlock(a)];
+            case 8:
+                return o.sent(),
+                [2, !0];
+            case 9:
+                return [2, !1];
+            case 10:
+                return [4, rO["a"].errorPush({
+                    errors: [{
+                        message: "WRONG_MASTER_ERROR"
+                    }]
+                })];
+            case 11:
+                return o.sent(),
+                [4, tO["a"].increaseEnterMasterErrors()];
+            case 12:
+                if (o.sent(),
+                a)
+                    return [2, {
+                        error: "WRONG_MASTER_ERROR"
+                    }];
+                o.label = 13;
+            case 13:
+                return [4, tO["a"].getEnterMasterErrors()];
+            case 14:
+                return i = o.sent(),
+                i > 4 ? [4, rO["a"].errorPush({
+                    errors: [{
+                        message: "MASTER_REACHED_LIMIT_ATTEMPS_ERROR"
+                    }]
+                })] : [3, 18];
+            case 15:
+                return o.sent(),
+                [4, tO["a"].removeEnterMasterErrors()];
+            case 16:
+                return o.sent(),
+                [4, this.logout()];
+            case 17:
+                o.sent(),
+                o.label = 18;
+            case 18:
+                return [2]
             }
+        }
+        ))
+    }
+    ))
+}
 ```
 
 and there is a way to check master password
 
 ```javascript
 e.checkMasterPassword = function(t) {
-                var a = t.masterPassword;
-                return Object(s["b"])(this, void 0, void 0, (function() {
-                    var t, n, i, o, c = this;
-                    return Object(s["e"])(this, (function(_) {
-                        switch (_.label) {
-                        case 0:
-                            return t = e.store.getters["keychain/getKeychain"],
-                            n = e.store.getters["keys/getKeys"],
-                            i = {},
-                            [4, Promise.all(t.map((function(e) {
-                                return Object(s["b"])(c, void 0, void 0, (function() {
-                                    var t, n, o, c, _;
-                                    return Object(s["e"])(this, (function(s) {
-                                        switch (s.label) {
-                                        case 0:
-                                            return s.trys.push([0, 4, , 5]),
-                                            t = e.enc_keypair,
-                                            n = e.sign_keypair,
-                                            o = new r["KeychainModule"],
-                                            [4, r["KeychainModule"].generateHashFromMasterPassword(a, e.client_salt)];
-                                        case 1:
-                                            return c = s.sent().hash,
-                                            [4, o.init(c)];
-                                        case 2:
-                                            return s.sent(),
-                                            [4, o.setKeyChain({
-                                                enc_keypair: t,
-                                                sign_keypair: n
-                                            })];
-                                        case 3:
-                                            return s.sent(),
-                                            i[e.keychain_uuid] = o,
-                                            [3, 5];
-                                        case 4:
-                                            return _ = s.sent(),
-                                            console.log(_),
-                                            [3, 5];
-                                        case 5:
-                                            return [2]
-                                        }
-                                    }
-                                    ))
-                                }
-                                ))
-                            }
-                            )))];
-                        case 1:
-                            return _.sent(),
-                            [4, e.findCurrentKeypairByKeychain(i, t, n)];
-                        case 2:
-                            return o = _.sent(),
-                            [2, null === o || void 0 === o ? void 0 : o.keypair]
-                        }
-                    }
-                    ))
-                }
-                ))
-            }
-```
-
-and getVault function
-
-```javascript
- e.getVaults = function(t) {
-                return Object(p["b"])(this, void 0, void 0, (function() {
-                    var a;
-                    return Object(p["e"])(this, (function(s) {
-                        switch (s.label) {
-                        case 0:
-                            return [4, e.store.dispatch("keys/setCurrentKey", t)];
-                        case 1:
-                            return s.sent(),
-                            [4, eO["a"].fetchVaultList({
-                                showRecords: 1
-                            })];
-                        case 2:
-                            return a = s.sent(),
-                            [2, a]
-                        }
-                    }
-                    ))
-                }
-                ))
-            }
-```
-
-When we add a new item, we find
-
-```javascript
-setItem: function(e) {
-                    return Object(p["b"])(t, void 0, void 0, (function() {
-                        var t, a, s = this;
-                        return Object(p["e"])(this, (function(r) {
-                            switch (r.label) {
+    var a = t.masterPassword;
+    return Object(s["b"])(this, void 0, void 0, (function() {
+        var t, n, i, o, c = this;
+        return Object(s["e"])(this, (function(_) {
+            switch (_.label) {
+            case 0:
+                return t = e.store.getters["keychain/getKeychain"],
+                n = e.store.getters["keys/getKeys"],
+                i = {},
+                [4, Promise.all(t.map((function(e) {
+                    return Object(s["b"])(c, void 0, void 0, (function() {
+                        var t, n, o, c, _;
+                        return Object(s["e"])(this, (function(s) {
+                            switch (s.label) {
                             case 0:
-                                return (null === e || void 0 === e ? void 0 : e.length) ? [4, Promise.all(e.map((function(e) {
-                                    return Object(p["b"])(s, void 0, void 0, (function() {
-                                        var t;
-                                        return Object(p["e"])(this, (function(a) {
-                                            switch (a.label) {
-                                            case 0:
-                                                return "0" === (null === e || void 0 === e ? void 0 : e.vault_uuid) ? [3, 2] : [4, oO["a"].encryptVault(Object(p["a"])({}, e))];
-                                            case 1:
-                                                return t = a.sent(),
-                                                [2, t];
-                                            case 2:
-                                                return [2]
-                                            }
-                                        }
-                                        ))
-                                    }
-                                    ))
-                                }
-                                )))] : [2, []];
+                                return s.trys.push([0, 4, , 5]),
+                                t = e.enc_keypair,
+                                n = e.sign_keypair,
+                                o = new r["KeychainModule"],
+                                [4, r["KeychainModule"].generateHashFromMasterPassword(a, e.client_salt)];
                             case 1:
-                                return t = r.sent(),
-                                a = t.filter((function(e) {
-                                    return !!e
-                                }
-                                )),
-                                [2, a]
+                                return c = s.sent().hash,
+                                [4, o.init(c)];
+                            case 2:
+                                return s.sent(),
+                                [4, o.setKeyChain({
+                                    enc_keypair: t,
+                                    sign_keypair: n
+                                })];
+                            case 3:
+                                return s.sent(),
+                                i[e.keychain_uuid] = o,
+                                [3, 5];
+                            case 4:
+                                return _ = s.sent(),
+                                console.log(_),
+                                [3, 5];
+                            case 5:
+                                return [2]
                             }
                         }
                         ))
                     }
                     ))
                 }
+                )))];
+            case 1:
+                return _.sent(),
+                [4, e.findCurrentKeypairByKeychain(i, t, n)];
+            case 2:
+                return o = _.sent(),
+                [2, null === o || void 0 === o ? void 0 : o.keypair]
             }
+        }
+        ))
+    }
+    ))
+}
+```
+
+and getVault function
+
+```javascript
+ e.getVaults = function(t) {
+    return Object(p["b"])(this, void 0, void 0, (function() {
+        var a;
+        return Object(p["e"])(this, (function(s) {
+            switch (s.label) {
+            case 0:
+                return [4, e.store.dispatch("keys/setCurrentKey", t)];
+            case 1:
+                return s.sent(),
+                [4, eO["a"].fetchVaultList({
+                    showRecords: 1
+                })];
+            case 2:
+                return a = s.sent(),
+                [2, a]
+            }
+        }
+        ))
+    }
+    ))
+}
+```
+
+When we add a new item, we find
+
+```javascript
+setItem: function(e) {
+        return Object(p["b"])(t, void 0, void 0, (function() {
+            var t, a, s = this;
+            return Object(p["e"])(this, (function(r) {
+                switch (r.label) {
+                case 0:
+                    return (null === e || void 0 === e ? void 0 : e.length) ? [4, Promise.all(e.map((function(e) {
+                        return Object(p["b"])(s, void 0, void 0, (function() {
+                            var t;
+                            return Object(p["e"])(this, (function(a) {
+                                switch (a.label) {
+                                case 0:
+                                    return "0" === (null === e || void 0 === e ? void 0 : e.vault_uuid) ? [3, 2] : [4, oO["a"].encryptVault(Object(p["a"])({}, e))];
+                                case 1:
+                                    return t = a.sent(),
+                                    [2, t];
+                                case 2:
+                                    return [2]
+                                }
+                            }
+                            ))
+                        }
+                        ))
+                    }
+                    )))] : [2, []];
+                case 1:
+                    return t = r.sent(),
+                    a = t.filter((function(e) {
+                        return !!e
+                    }
+                    )),
+                    [2, a]
+                }
+            }
+            ))
+        }
+        ))
+    }
+}
 ```
 
 ```javascript
