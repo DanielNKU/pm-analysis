@@ -1,0 +1,6 @@
+Official Websites:
+	https://blog.lesspass.com/2022-12-29/decommissioning-lesspass-database
+	https://github.com/lesspass/lesspass
+	https://blog.lesspass.com/2016-10-19/how-does-it-work
+	https://github.com/lesspass/lesspass/issues/89
+	https://github.com/lesspass/lesspass/issues/389
