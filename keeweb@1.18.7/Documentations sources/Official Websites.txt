@@ -1,0 +1,5 @@
+Official Websites:
+	https://github.com/keeweb/keeweb
+	https://en.wikipedia.org/wiki/KeeWeb
+	https://github.com/keeweb/keeweb/issues/557
+	https://github.com/Kunzisoft/KeePassDX/issues/533
