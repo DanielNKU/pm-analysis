@@ -1,0 +1,5 @@
+Expert Blogs:
+	https://superuser.com/questions/146742/how-does-google-chrome-store-passwords
+	https://www.nirsoft.net/utils/chromepass.html
+	https://www.quora.com/What-algorithm-is-used-by-Google-Chrome-when-encrypting-synced-passwords
+	https://security.stackexchange.com/questions/170481/how-secure-is-chrome-storing-a-password

@@ -1,0 +1,5 @@
+Official Websites:
+	https://support.google.com/chrome/answer/10311524?hl=en
+	https://chromium.googlesource.com/chromium/chromium/+/master/sync/util/nigori.cc
+	https://chromeunboxed.com/google-password-manager-encryption
+	https://security.googleblog.com/2022/10/SecurityofPasskeysintheGooglePasswordManager.html
