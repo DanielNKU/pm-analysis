@@ -1,0 +1,8 @@
+Official Websites:
+	https://www.gopass.pw/
+	https://github.com/gopasspw/gopass/tree/master/docs
+	https://www.rfc-editor.org/rfc/rfc4880.txt
+	https://www.goanywhere.com/products/goanywhere-mft/encryption/gpg
+	https://pkg.go.dev/github.com/gopasspw/gopass
+	https://github.com/gopasspw/gopass/blob/master/docs/security.md
+	https://github.com/gopasspw/gopass/issues/1635

@@ -1,0 +1,4 @@
+Expert Blogs:
+	https://woile.dev/posts/sharing-team-secrets/
+	https://bailey.st/2020/11/29/Defense-in-Dept-keep-ssh-keys-safe-with-gopass.html
+	https://news.ycombinator.com/item?id=29597729
