@@ -1,0 +1,5 @@
+Official Websites:
+	https://github.com/padloc/padloc
+	https://github.com/padloc/padloc/blob/main/security.md
+	https://github.com/padloc/padloc/security
+	https://padloc.app/
