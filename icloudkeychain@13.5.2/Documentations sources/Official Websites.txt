@@ -1,0 +1,7 @@
+Official Websites:
+	https://developer.apple.com/documentation/security/keychain_services
+	https://developer.apple.com/documentation/security/keychain_services/keychain_items
+	https://developer.apple.com/documentation/security/keychain_services/keychain_items/using_the_keychain_to_manage_user_secrets
+	https://developer.apple.com/documentation/security/keychain_services/keychain_items/adding_a_password_to_the_keychain
+	https://developer.apple.com/documentation/security/keychain_services/keychain_items/item_attribute_keys_and_values
+	https://support.apple.com/en-my/guide/security/secb0694df1a/web
