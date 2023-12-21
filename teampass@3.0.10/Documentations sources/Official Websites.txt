@@ -1,0 +1,8 @@
+Official Websites:
+	https://github.com/nilsteampassnet/TeamPass
+	https://documentation.teampass.net/#/
+	https://github.com/defuse/php-encryption/blob/master/docs/CryptoDetails.md
+	https://documentation.teampass.net/#/install/encryption
+	https://teampass.readthedocs.io/en/latest/features/feat-2FA/
+	https://teampass.readthedocs.io/en/latest/features/feat-encrypt/
+	https://teampass.net/features.html
