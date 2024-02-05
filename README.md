@@ -1,4 +1,4 @@
-# pm-analysis
+# Security Analysis of Master-Password-Protected Password Management Protocols
 
 This repository contains data for the paper `Security Analysis of Master-Password-Protected Password Management Protocols.` Information on password managers is sourced from documentation, data logs, and application codes, neatly organized into three dedicated folders.
 
