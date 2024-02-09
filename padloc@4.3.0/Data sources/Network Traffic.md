@@ -16,7 +16,7 @@ Origin: https://web.padloc.app
 Sec-Fetch-Site: same-origin
 Sec-Fetch-Mode: cors
 Sec-Fetch-Dest: empty
-Referer: https://web.padloc.app/login?name=&email=daniel7756%40foxmail.com&authToken=8BUEmVXR2D0bUXCPaLSenw&deviceTrusted=true
+Referer: https://web.padloc.app/login?name=&email=example%40example.com&authToken=8BUEmVXR2D0bUXCPaLSenw&deviceTrusted=true
 Accept-Encoding: gzip, deflate, br
 Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
 Connection: close
