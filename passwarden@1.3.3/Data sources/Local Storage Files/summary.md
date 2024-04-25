@@ -1,3 +1,3 @@
 ## Searching Local Data File
 
-We do not search for local data file.
+We have verified the data format by capturing packets, so we do not spend more effort on searching for local storage files.

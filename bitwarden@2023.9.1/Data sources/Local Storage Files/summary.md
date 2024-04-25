@@ -1,6 +1,6 @@
 ## Searching Local Storage File
 
-Windows: ~\AppData\Roaming\Bitwarden\data,json
+Windows: ~\AppData\Roaming\Bitwarden\data.json
 
 Finding:
 

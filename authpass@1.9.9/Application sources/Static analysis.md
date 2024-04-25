@@ -10,7 +10,7 @@ Future<FileSource> createFile({
     analytics.events.trackCreateFile();
     assert(!(databaseName.endsWith(AppConstants.kdbxExtension)));
     final credentials = Credentials(ProtectedValue.fromString(password));
-    final kdbxFile = kdbxFormat.create(
+    final kdbxFile = kdbxFormat.create( //Using KBDX format
       credentials,
       databaseName,
       generator: Env.AuthPass,

@@ -1,6 +1,6 @@
 ## Dynamic Analysis
 
-We first verify the function that we find in static analysis, and then we main focus on perticular parameters.
+We first verify the function that we find in static analysis, and then we main focus on particular parameters.
 
 The encryption key is "cZrH8B3QTXFetioyicnFBV0m93TfiBJx6ehKpkSn0ho=" 
 

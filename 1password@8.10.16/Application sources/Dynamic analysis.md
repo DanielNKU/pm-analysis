@@ -3,7 +3,7 @@
 ![dynamic analysis1](fig/dynamic-analysis1.png)
 
 ```javascript
-k = function(e, t, n, r, i) {
+k = function(e, t, n, r, i) { // The r is the iteration number of PBKDF2
             return R(void 0, void 0, Promise, (function() {
                 var a, s, c, l;
                 return O(this, (function(f) {

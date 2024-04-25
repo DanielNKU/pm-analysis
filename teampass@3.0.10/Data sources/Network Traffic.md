@@ -1,11 +1,3 @@
-## 1. Capturing Network Traffic
+## Capturing Network Traffic
 
-Finding:
-
-1. 
-
-## 2. Searching Local Data File
-
-Finding:
-
-1. 
+We do not capture network traffic for teampass, because it cannot be implemented.

@@ -79,7 +79,7 @@ function Ms() {
                         }
 ```
 
-We find caculate the key
+We find the key
 
 ```javascript
 e.prototype.getMasterUnlockKey = function(e, t) {

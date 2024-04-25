@@ -9,7 +9,7 @@ n = a1
                         f = p.agw(f, g).a
                         if (!A.xI(f, b.t_(f.length)))
                             throw A.d(new A.qm())
-                        m = p.bb3(a, p.bfg(g, b), n.b)
+                        m = p.bb3(a, p.bfg(g, b), n.b) //Enter into this function
                         o.I(B.R, "compression: " + a.gHQ().j(0), null, null)
                         if (a.gHQ() === B.iM) {
                             l = A.c_5(m)

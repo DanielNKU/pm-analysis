@@ -24,7 +24,7 @@ whitepaper
 
 whitepaper
 
-![CSPRNG library](fig/CSPRNG library.png)
+![CSPRNG library](fig/CSPRNG-library.png)
 
 ## Data Field
 

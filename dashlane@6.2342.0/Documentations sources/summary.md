@@ -20,6 +20,3 @@ whitepaper
 
 ![authentication](fig/authentication.png)
 
-Q:
-
-1. The authentication part of the device key is encrypted. Where does this encryption key come from? 

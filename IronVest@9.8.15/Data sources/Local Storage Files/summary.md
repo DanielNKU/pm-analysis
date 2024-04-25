@@ -1,3 +1,3 @@
 ## Searching Local Storage File
 
-We do not search for local storage file.
+We do not find local storage file.
