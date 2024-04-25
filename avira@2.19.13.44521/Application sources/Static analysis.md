@@ -27,23 +27,23 @@ function KeyForPassword(password, salt) {
 
 Symmetric Encryption
 
-![](fig\AES.png)
+![](fig/AES.png)
 
  Hash Function
 
-![](fig\Hash.png)
+![](fig/Hash.png)
 
  Key Derivation Function
 
-![](fig\AES-key.png)
+![](fig/AES-key.png)
 
-![](fig\AES-IV.png)
+![](fig/AES-IV.png)
 
-![](fig\AES-key-given.png)
+![](fig/AES-key-given.png)
 
 Random number gernator
 
-![](fig\random.png)
+![](fig/random.png)
 
 
 
